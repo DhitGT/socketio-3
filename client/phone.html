@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Phone</title>
+</head>
+<body>
+    <h1>Phone</h1> unselectable
+    <button id="fullscreenButton">FULL SCREEN</button>
+    <input type="text" placeholder="Room Id" id="roomidinput">
+    <div style="display: flex; width:500px; justify-content:space-between;">
+        <div class="analog-controller" id="analogController">
+            <div class="analog-stick" id="analogStick"></div>
+        </div>
+        <button class="inputbtn"></button>
+    </div>
+    <div class="container">
+        <!-- <div class="input-container">
+            <div class="inputbtn unselectable" ></div>
+            <div id="btnD" class="inputbtn unselectable">d</div>
+            <div class="inputbtn unselectable"></div>
+            <div id="btnL" class="inputbtn unselectable">l</div>
+            <div class="inputbtn unselectable"></div>
+            <div id="btnR" class="inputbtn unselectable">r</div>
+            <div class="inputbtn unselectable"></div>
+            <div id="btnU" class="inputbtn unselectable">u</div>
+            <div class="inputbtn unselectable"></div>
+        </div> -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.0/socket.io.min.js"></script>
+    <script src="phone.js"></script>
+</body>
+</html>

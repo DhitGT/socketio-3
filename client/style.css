@@ -1,0 +1,72 @@
+
+.unselectable {
+    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* Safari and older versions of Chrome */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+body{
+    background-color: #201f21;
+}
+
+table, td{
+    border: 2px solid black;
+}
+
+canvas{
+    border: 2px solid wheat;
+}
+
+@media(max-width: 600px){
+    body{
+        background-color: aqua;
+        transform: rotate(90deg) translateX(40%);
+
+    }
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        flex-wrap: wrap;
+        height: 25vh;
+    }
+
+    .inputbtn{
+        width: 50px;
+        height: 50px;
+    }
+
+    .inputbtn:active{
+        background-color: aqua;
+    }
+
+    .analog-controller {
+        position: absolute;
+
+        width: 150px;
+        height: 150px;
+        background-color: #ccc;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        transform: rotate(-90deg);
+    }
+    
+    .analog-stick {
+
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        border-radius: 50%;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        transform: translate(-15%, -15%);
+        transition: transform 0s ease-in-out;
+    }
+    
+    
+    
+    
+    
+}
