@@ -25,6 +25,7 @@ const BtnL = document.getElementById('btnL')
 const BtnU = document.getElementById('btnU')
 const BtnD = document.getElementById('btnD')
 const BtnR = document.getElementById('btnR')
+const BtnFire = document.getElementById('firebtn')
 const roomIdInput = document.getElementById("roomidinput");
 // let roomId = roomIdInput.value;
 
@@ -77,6 +78,14 @@ roomIdInput.addEventListener("change", () => {
 //     buttons.BtnD = false
 //     init()
 // })
+BtnFire.addEventListener('touchstart', ()=>{
+    buttons.BtnFire = true
+    sendButtonState()
+})
+BtnFire.addEventListener('touchend', ()=>{
+    buttons.BtnFire = false
+    sendButtonState()
+})
 
 const analogStick = document.getElementById('analogStick');
 const analogController = document.querySelector('.analog-controller');
@@ -86,6 +95,7 @@ let buttons = {
     BtnU: false,
     BtnD: false,
     BtnR: false,
+    BtnFire: false
 };
 
 analogStick.addEventListener('touchstart', (e) => {
